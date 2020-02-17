@@ -1,0 +1,7 @@
+lvm_volumes:
+  - data: large1-lv
+    data_vg: large1
+  - data: large2-lv
+    data_vg: large2
+  - data: large3-lv
+    data_vg: large3
