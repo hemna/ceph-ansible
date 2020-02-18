@@ -1,6 +1,6 @@
 ceph_origin: repository
 ceph_repository: community
-ceph_stable_release: octopus
+ceph_stable_release: nautilus
 public_network: "192.168.121.0/24"
 cluster_network: "192.168.121.0/24"
 monitor_interface: eth0
@@ -9,11 +9,6 @@ ip_version: ipv4
 radosgw_interface: eth0
 radosgw_num_instances: 1
 common_single_host_mode: true
-
-devices:
-  - '/dev/sda'
-  - '/dev/sdb'
-
 
 dashboard_enabled: False
 

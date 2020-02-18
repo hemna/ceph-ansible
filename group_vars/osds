@@ -5,3 +5,5 @@ lvm_volumes:
     data_vg: large2
   - data: large3-lv
     data_vg: large3
+  - data: large4-lv
+    data_vg: large4
