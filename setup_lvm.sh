@@ -1,15 +1,16 @@
 #!/bin/bash
-mkdir ~/lvm
-cd ~/lvm
+LVM_DIR='/home/vagrant/lvm'
+mkdir $LVM_DIR
+cd $LVM_DIR
 truncate -s 41G test-1
 truncate -s 41G test-2
 truncate -s 41G test-3
 truncate -s 41G test-4
 
-TEST1=`sudo losetup -f --show ./test-1`
-TEST2=`sudo losetup -f --show ./test-2`
-TEST3=`sudo losetup -f --show ./test-3`
-TEST4=`sudo losetup -f --show ./test-4`
+TEST1=`sudo losetup -f --show $LVM_DIR/test-1`
+TEST2=`sudo losetup -f --show $LVM_DIR/test-2`
+TEST3=`sudo losetup -f --show $LVM_DIR/test-3`
+TEST4=`sudo losetup -f --show $LVM_DIR/test-4`
 
 vgcreate large1 $TEST1
 vgcreate large2 $TEST2
